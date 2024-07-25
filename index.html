@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>YouTube Clone with Bootstrap</title>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <style>
+    .navbar-brand {
+      margin-left: 30px;
+    }
+    
+    .bar-icon {
+      margin-left: 10px;
+      color: white;
+    }
+    
+    .btn {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-right: -90px;
+    }
+    
+    .create-icon, .bell-icon, .profile-icon {
+      color: white;
+    }
+
+    .sidebar {
+      height: 100vh;
+      position: fixed;
+      top: 70px;
+      left: 0;
+      width: 200px;
+      background-color: #f8f9fa;
+      padding-top: 20px;
+    }
+
+    .content {
+      margin-left: 220px;
+      padding: 20px;
+    }
+
+    .video-card {
+      margin-bottom: 20px;
+    }
+
+    .video-title {
+      font-size: 1rem;
+      font-weight: bold;
+    }
+
+    .video-channel {
+      color: gray;
+    }
+
+    body {
+      padding-top: 70px;
+    }
+    .nav-item:hover{
+     background-color: antiquewhite;
+    }
+   
+  </style>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-danger fixed-top">
+    <div class="bar-icon">
+      <i class="fa-solid fa-bars"></i>
+    </div>
+    
+    <a class="navbar-brand" href="#">
+      <img src="./youtube logo.png" alt="YouTube Logo" height="50">
+      <span class="pk">pk</span>
+    </a>
+
+    <form class="form-inline my-2 my-lg-0 mx-auto w-50">
+      <input class="form-control rounded-pill w-75 mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-light my-2 my-sm-0 rounded-pill" type="submit">
+        
+        <span class="search-bar"><i class="fa-solid fa-magnifying-glass"></i></span>
+      </button>
+    </form>
+
+    <div class="navbar-nav">
+      <a class="nav-item1 nav-link" href="#">
+        <div class="create-icon">
+          <i class="fa-solid fa-plus"></i>
+        </div>
+       
+      </a>
+      <a class="nav-item2 nav-link" href="#">
+        <div class="bell-icon">
+          <i class="fa-solid fa-bell"></i>
+        </div>
+      </a>
+      <a class="nav-item3 nav-link" href="#">
+        <div class="profile-icon">
+          <i class="fa-solid fa-user"></i>
+        </div>
+      </a>
+    </div>
+  </nav>
+
+  <div class="sidebar">
+    <ul class="nav flex-column">
+      <li class="nav-item">
+        <a class="nav-link  text-dark" href="#"><i class="fa-solid fa-home "></i> Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link text-dark" href="#"><i class="fa-solid fa-fire"></i> Trending</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link text-dark" href="#"><i class="fa-solid fa-play-circle"></i> Subscriptions</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link text-dark" href="#"><i class="fa-solid fa-folder"></i> Library</a>
+      </li>
+    </ul>
+  </div>
+
+  <div class="content container ">
+    <div class="row">
+      <div class="col-lg-4 col-md-6 col-sm-12 video-card ">
+        <div class="card">
+          <iframe width="100%" height="200" src="https://www.youtube.com/embed/bFWjjqAizX4" title="YouTube video player" frameborder="0" allowfullscreen></iframe>
+          <div class="card-body">
+            <p class="video-title">Video Title 1</p>
+            <p class="video-channel">Channel Name 1</p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="col-lg-4 col-md-6 col-sm-12 video-card">
+        <div class="card">
+          <iframe width="100%" height="200" src="https://www.youtube.com/embed/agpEjG-HUyw" title="YouTube video player" frameborder="0" allowfullscreen></iframe>
+          <div class="card-body">
+            <p class="video-title">Video Title 2</p>
+            <p class="video-channel">Channel Name 2</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6 col-sm-12 video-card">
+        <div class="card">
+          <iframe width="100%" height="200" src="https://www.youtube.com/embed/LOpVfIggP9M" title="YouTube video player" frameborder="0" allowfullscreen></iframe>
+          <div class="card-body">
+            <p class="video-title">Video Title 3</p>
+            <p class="video-channel">Channel Name 3</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6 col-sm-12 video-card">
+        <div class="card">
+          <iframe width="100%" height="200" src="https://www.youtube.com/embed/DQJpyimnPkQ" title="YouTube video player" frameborder="0" allowfullscreen></iframe>
+          <div class="card-body">
+            <p class="video-title">Video Title 4</p>
+            <p class="video-channel">Channel Name 4</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6 col-sm-12 video-card">
+        <div class="card">
+          <iframe width="100%" height="200" src="https://www.youtube.com/embed/zJYhzgSI9pE" title="YouTube video player" frameborder="0" allowfullscreen></iframe>
+          <div class="card-body">
+            <p class="video-title">Video Title 5</p>
+            <p class="video-channel">Channel Name 5</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6 col-sm-12 video-card">
+        <div class="card">
+          <iframe width="100%" height="200" src="https://www.youtube.com/embed/zLjRG-eq3vI" title="YouTube video player" frameborder="0" allowfullscreen></iframe>
+          <div class="card-body">
+            <p class="video-title">Video Title 6</p>
+            <p class="video-channel">Channel Name 6</p>
+          </div>
+        </div>
+      </div>
+   
+      <div class="col-lg-4 col-md-6 col-sm-12 video-card">
+        <div class="card">
+          <iframe width="100%" height="200" src="https://www.youtube.com/embed/Tqb1N9DOoyM" title="YouTube video player" frameborder="0" allowfullscreen></iframe>
+          <div class="card-body">
+            <p class="video-title">Video Title 7</p>
+            <p class="video-channel">Channel Name 7</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6 col-sm-12 video-card">
+        <div class="card">
+          <iframe width="100%" height="200" src="https://www.youtube.com/embed/zY_pfcQuDeA" title="YouTube video player" frameborder="0" allowfullscreen></iframe>
+          <div class="card-body">
+            <p class="video-title">Video Title 8</p>
+            <p class="video-channel">Channel Name 8</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6 col-sm-12 video-card">
+        <div class="card">
+          <iframe width="100%" height="200" src="https://www.youtube.com/embed/o4qnuo2Z8dQ" title="YouTube video player" frameborder="0" allowfullscreen></iframe>
+          <div class="card-body">
+            <p class="video-title">Video Title 9</p>
+            <p class="video-channel">Channel Name 9</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6 col-sm-12 video-card">
+        <div class="card">
+          <iframe width="100%" height="200" src="https://www.youtube.com/embed/yXbRYvQgIT8" title="YouTube video player" frameborder="0" allowfullscreen></iframe>
+          <div class="card-body">
+            <p class="video-title">Video Title 10</p>
+            <p class="video-channel">Channel Name 10</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6 col-sm-12 video-card">
+        <div class="card">
+          <iframe width="100%" height="200" src="https://www.youtube.com/embed/zbtwxq2lG4Q" title="YouTube video player" frameborder="0" allowfullscreen></iframe>
+          <div class="card-body">
+            <p class="video-title">Video Title 11</p>
+            <p class="video-channel">Channel Name 11</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6 col-sm-12 video-card">
+        <div class="card">
+          <iframe width="100%" height="200" src="https://www.youtube.com/embed/zIFGDEg9-tc" title="YouTube video player" frameborder="0" allowfullscreen></iframe>
+          <div class="card-body">
+            <p class="video-title">Video Title 12</p>
+            <p class="video-channel">Channel Name 12</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="bg-dark text-white text-center py-3">
+    <p>&copy; 2024 YouTube Clone</p>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
